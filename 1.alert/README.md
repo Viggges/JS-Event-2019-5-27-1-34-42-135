@@ -24,6 +24,14 @@
   <script>
      // write your code here 
      // ......
+    window.onload = function(){
+    var li = document.getElementById("no").getElementsByTagName("li");
+    for(i=0;i<li.length;i++){
+       li[i].onclick = function(){
+            alert(this.innerHTML);
+			}
+		}
+	}
   </script>
   </body>
   </html>
